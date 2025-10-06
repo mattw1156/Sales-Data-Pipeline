@@ -1,3 +1,5 @@
 Total Revenue = SUM(CustomerRevenue[TotalRevenue])
 
 Total Customers = DISTINCTCOUNT(CustomerRevenue[CustomerID])
+
+RevPerCustomer = [Total Revenue]/[Total Customers]
