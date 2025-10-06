@@ -1,0 +1,14 @@
+RevBuckets = 
+VAR v = CustomerRevenue[TotalRevenue]
+VAR step = 5000
+VAR cap = 50000
+VAR low = INT(MAX(0, v) / step) * step
+VAR hi = low +step
+RETURN
+SWITCH(
+    TRUE(),
+    ISBLANK(V), "Unknown",
+    v < 0, "Negative(returns)", 
+    v >= cap, FORMAT(cap, "#,0") & "+",
+    FORMAT(low, "#,0") & "-" & FORMAT(hi, "#,0")
+)
