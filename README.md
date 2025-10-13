@@ -7,9 +7,9 @@ The goal was to build a data pipeline that ingests raw sales transactions, trans
 ---
 
 ### 🗂️ Data Source
-- **Dataset:** [Kaggle – Online Retail Dataset](https://www.kaggle.com/)  
-- **File:** `OnlineRetail.csv`  
-- **Description:** Contains real retail transactions including Invoice No, Stock Code, Description, Quantity, Unit Price, Customer ID, and Country.
+- **Dataset:** Data recieved from [Kaggle](https://www.kaggle.com/) 
+- **File:** `data.csv`  
+- **Description:** Contains retail transactions including Invoice No, Stock Code, Description, Quantity, Unit Price, Customer ID, and Country.
 
 ---
 
@@ -19,12 +19,12 @@ The goal was to build a data pipeline that ingests raw sales transactions, trans
 - **Load:** Inserted the transformed data into **SQL Server** table `CustomerRevenue`.
 
 *Example Screenshot:*  
-![ETL Package](screenshot_SSIS_ETL.png)
+![ETL Package](screenshot 2025-10-04 191423.png)
 
 ---
 
 ### 🗄️ SQL Server Stage
-All SQL logic is contained in `SalesDataPipeline.sql`, which:
+All SQL logic is contained in `salesdata.sql`, which:
 - Creates and defines the `CustomerRevenue` table schema.  
 - Loads data from the SSIS import.  
 - Includes commented sanity-check queries (row counts, distinct IDs, revenue totals).  
