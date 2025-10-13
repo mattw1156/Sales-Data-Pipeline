@@ -19,7 +19,7 @@ The goal was to build a data pipeline that ingests raw sales transactions, trans
 - **Load:** Inserted the transformed data into **SQL Server** table `CustomerRevenue`.
 
 *Example Screenshot:*  
-![ETL Package](Screenshot 2025-10-04 191423.png)
+![ETL Package](Screenshot%202025-10-04%20191423.png)
 
 ---
 
